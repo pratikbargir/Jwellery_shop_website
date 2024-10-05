@@ -24,3 +24,25 @@ This jewelry shop website reflects our commitment to excellence in both design a
 **Home Page:**
 ![image](https://github.com/user-attachments/assets/c12b1e16-6865-4e05-9bee-033f47ba903e)
 
+**About Page:**
+![image](https://github.com/user-attachments/assets/d7e47f4d-bcc8-4f14-9e1b-31bacd6e983e)
+
+**Contact Us:**
+![image](https://github.com/user-attachments/assets/119d338c-7a66-46bd-bd3d-3aaf8ec916ec)
+
+**Feedback:**
+![image](https://github.com/user-attachments/assets/c5c30704-7a59-485f-a5cc-2adfed4e72d4)
+
+**Product:**
+![image](https://github.com/user-attachments/assets/c4bfdf37-5d22-472a-b83b-0868b0deeb77)
+![image](https://github.com/user-attachments/assets/3f75d7ad-cbfb-4b93-beb9-172af0b2c78a)
+
+**Login Page:**
+![image](https://github.com/user-attachments/assets/2bde923c-db2e-4897-8c75-9c1baff348e4)
+
+
+
+
+
+
+

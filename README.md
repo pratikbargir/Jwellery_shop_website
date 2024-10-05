@@ -18,3 +18,9 @@ Welcome to our Jewelry Shop, an elegant online platform designed to showcase the
 **Customer Support:** Integrated contact forms and customer support features enable quick communication with our team for any inquiries or assistance.
 This jewelry shop website reflects our commitment to excellence in both design and functionality, offering a delightful shopping experience from start to finish. Developed using ASP.NET, it’s built to be scalable, secure, and fully customizable to meet the needs of our growing clientele.
 
+
+**Pictural View of Our Website:**
+
+**Home Page:**
+![image](https://github.com/user-attachments/assets/c12b1e16-6865-4e05-9bee-033f47ba903e)
+

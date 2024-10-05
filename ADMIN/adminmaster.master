@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminmaster.master.cs" Inherits="ADMIN_adminmaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    &nbsp;&nbsp;
+    <table class="style1" bgcolor="#333333" align="center"><tr><td align="center">
+    <table width="90%" bgcolor="White">
+    <tr><td align="center" 
+            
+            
+            style="font-family: Arial, Helvetica, sans-serif; font-size: large; font-weight: bold; color: #000000; text-align: left; background-color: #666666;">
+        &nbsp;</td></tr>
+        <tr>
+            <td>
+                
+                
+                
+                 <table cellspacing="0" class="style1">
+        <tr>
+            <td>
+                <asp:Image ID="Image1" runat="server" Height="90px" 
+                    ImageUrl="~/images/goldsmith.png" Width="355px" />
+            </td>
+            <td style="font-weight: 700; font-family: Arial, Helvetica, sans-serif; font-size: xx-large">
+                ADMIN PANEL</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <asp:Menu ID="Menu1" runat="server" BackColor="#CC0000" 
+                    Font-Names="Arial" ForeColor="White" Orientation="Horizontal" Width="100%" 
+                    Height="40px" onmenuitemclick="Menu1_MenuItemClick" 
+                    
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: medium; background-color: #000000;" >
+                    <DynamicMenuItemStyle BackColor="#CC0000" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem Text="Manage Rate" Value="        " 
+                            NavigateUrl="~/ADMIN/Manage rates.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Manage Category" Value="About us">
+                            <asp:MenuItem NavigateUrl="~/ADMIN/Add category.aspx" Text="Add Category" 
+                                Value="Add Category"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/ADMIN/subcategories.aspx" Text="Add Subcategory" 
+                                Value="Add Subcategory"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Manage Product" Value="Support" 
+                            NavigateUrl="~/ADMIN/Add Product.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Manage Order" Value="Manage Order" 
+                            NavigateUrl="~/ADMIN/manage order.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ADMIN/manage user.aspx" Text="Manage User" 
+                            Value="Manage User"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ADMIN/Stock.aspx" Text="Stock" Value="Stock">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ADMIN/Add Admin.aspx" Text="Manage Admin" 
+                            Value="change password"></asp:MenuItem>
+                        <asp:MenuItem Text="Report" Value="Report">
+                            <asp:MenuItem NavigateUrl="~/REPORT/category report.aspx" 
+                                Text="Category Report" Value="Category Report"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/REPORT/product report.aspx" Text="Product Report" 
+                                Value="Product Report"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/REPORT/user report.aspx" Text="User Report" 
+                                Value="User Report"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/REPORT/order report.aspx" Text="Order Report" 
+                                Value="Order Report"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/REPORT/feedback report.aspx" 
+                                Text="Feedback Report" Value="Feedback Report"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Log Out" Value="Log Out" 
+                            NavigateUrl="~/USER/home.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+   
+                
+                
+                
+                
+                
+                </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #333333">
+                &nbsp;</td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,363 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Homemaster.master.cs" Inherits="USER_Homemaster"  Debug="true" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+	<script type="text/javascript" src="../engine1/jquery.js"></script>
+
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 100%;
+            
+        }
+        .style2
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .style3
+        {
+            font-size: small;
+        }
+        .style4
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .style5
+        {
+            width: 150px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table cellspacing="0" class="style1" border="0" 
+        
+        style="border-style: outset; border-width: thick thin thin thin; border-color: #002E5B;" 
+        cellpadding="0" frame="void">
+        <tr>
+            <td 
+                
+                
+                style="color: #FFFFFF; font-size: medium; font-family: Arial, Helvetica, sans-serif; background-color: #003366" 
+                colspan="2">
+              <%--<marquee width="100%" ><asp:Label ID="lbldate" runat="server" Text="Label"></asp:Label> Gold Rate per 10 Grams-22 Carat=Rs.<asp:Label ID="lbl22rate" runat="server" Text="Label"></asp:Label >  | 18 Carat=Rs.<asp:Label ID="lbl18rate" runat="server" Text="Label"></asp:Label>
+              </marquee>--%>
+              </td>
+        </tr>
+    
+        <tr>
+            <td colspan="2">
+                
+                
+                <table cellpadding="3" cellspacing="0" class="style2">
+                    <tr>
+                        <td rowspan="2">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" 
+                                ImageUrl="~/images/goldsmith.png" Width="300px" 
+                                PostBackUrl="~/USER/home.aspx" />
+                            &nbsp;</td>
+                        <td rowspan="2">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </td>
+                        <td style="text-align: center;  font-family: Arial, Helvetica, sans-serif; font-size: medium; font-weight: 700; color: #FFFFFF;" 
+                            rowspan="2" bgcolor="#000042" class="style5">
+                         <asp:Label ID="lbldate" runat="server" Text="Label"></asp:Label>
+                         <br /> Gold Rate/10gm<br />
+                            </td>
+                        <td style="text-align: left;  font-family: Arial, Helvetica, sans-serif; font-size: medium; font-weight: 700; color: #FFFFFF;" 
+                            rowspan="2" bgcolor="#000042" class="style5">
+                            22 crt=Rs.<asp:Label ID="lbl22rate" runat="server" Text="Label"></asp:Label > 
+                         <br style="font-family: Arial, Helvetica, sans-serif; text-align: left; color: #FFFFFF" /> 18 crt=Rs.<asp:Label 
+                                ID="lbl18rate" runat="server" Text="Label"></asp:Label>
+
+                         
+                         
+                         
+                         &nbsp;</td>
+                        <td style="text-align: center" rowspan="2">
+                        </td>
+                        <td style="text-align: center">
+                            <asp:ImageButton ID="ImageButton3" runat="server" Height="30px" 
+                                ImageUrl="~/images/login-icon.png" Width="50px" 
+                                PostBackUrl="~/USER/UserLogin.aspx" />
+                        </td>
+                        <td style="text-align: center">
+                            <asp:ImageButton ID="ImageButton4" runat="server" Height="30px" 
+                                ImageUrl="~/images/reg.png" Width="50px" 
+                                PostBackUrl="~/USER/register.aspx" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style3" 
+                            style="text-align: center; font-family: Arial, Helvetica, sans-serif">
+                            Login</td>
+                        <td class="style3" 
+                            style="text-align: center; font-family: Arial, Helvetica, sans-serif">
+                            Register</td>
+                    </tr>
+                </table>
+                
+                
+                </td>
+        </tr>
+    
+        <tr align="center">
+            <td align="center" bgcolor="Black">
+                
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+           
+                
+                
+                </td>
+            <td align="center" bgcolor="Black">
+                
+                &nbsp;<asp:Menu ID="Menu1" runat="server" ForeColor="#FF9900" 
+                    Orientation="Horizontal" 
+                    style="font-family: Arial, Helvetica, sans-serif; color: #FF9900; font-size: large; background-color: #000000" 
+                    Width="90%" Height="">
+                    <StaticMenuStyle BackColor="Black" />
+                    <StaticMenuItemStyle BackColor="Black" Font-Names="Arial" Font-Size="Large" />
+                    <DynamicMenuStyle BackColor="Black" />
+                    <DynamicMenuItemStyle BackColor="Black" Font-Names="Arial" Font-Size="Large" />
+                    <Items>
+                        <asp:MenuItem Text="GOLD" Value="Gold">
+                            <asp:MenuItem Text="Ring" Value="Ring" NavigateUrl="~/USER/goldring.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Earings" Value="Earings" 
+                                NavigateUrl="~/USER/gold earing.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Bangles" Value="New Item" 
+                                NavigateUrl="~/USER/Gold Bangles.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Mangalsutra" Value="New Item" 
+                                NavigateUrl="~/USER/Gold Mangalsutra.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/USER/Gold Necklace.aspx" Text="Necklace" 
+                                Value="Necklace"></asp:MenuItem>
+                        </asp:MenuItem>
+                        
+                        <asp:MenuItem Text="DIAMOND" Value="Diamond">
+                            <asp:MenuItem Text="Ring" Value="Ring" NavigateUrl="~/USER/Diamond ring.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/USER/Diamond earings.aspx" Text="Earrings" 
+                                Value="Earrings"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/USER/Daimond Mangalsutra.aspx" Text="Mangalsutra" 
+                                Value="Mangalsutra"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/USER/Diamond Necklace.aspx" Text="Necklace" 
+                                Value="Necklace"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="PLATINUM" Value="Platinum">
+                            <asp:MenuItem NavigateUrl="~/USER/Platinum Ring.aspx" Text="Ring" Value="Ring">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/USER/Platinum Earrings.aspx" Text="Earrings" 
+                                Value="Earrings"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/USER/Platinum Necklaceaspx.aspx" Text="Necklace" 
+                                Value="Necklace"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Gold Coins" Value="Kundan" 
+                            NavigateUrl="~/USER/Gold coins.aspx"></asp:MenuItem>
+                        
+                        <asp:MenuItem Text="RATES" Value="Rates" NavigateUrl="~/USER/Rates.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu></td>
+        </tr>
+        <tr>
+            <td align="center" 
+                
+                
+                style="font-family: Arial, Helvetica, sans-serif; color: #CC9900; font-size: large; text-align: center; background-color: #000000" 
+                colspan="2">
+                <table align="right" cellpadding="5" class="style4">
+                <%--    <tr>
+                        <td>
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink1" runat="server" 
+                                style="text-decoration:none; color: #FF9900;" NavigateUrl="~/USER/Gold.aspx">GOLD</asp:HyperLink>
+                        </td>
+                        <td>
+                            |</td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink2" runat="server" 
+                                style="text-decoration:none; color: #FF9900;" 
+                                NavigateUrl="~/USER/Platinum.aspx">PLATINUM</asp:HyperLink>
+                        </td>
+                        <td>
+                            |</td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink3" runat="server" 
+                                style="text-decoration:none; color: #FF9900;" NavigateUrl="~/USER/Diamond.aspx">DIAMOND</asp:HyperLink>
+                        </td>
+                        <td>
+                            |</td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink4" runat="server" 
+                                style="text-decoration:none; color: #FF9900;" NavigateUrl="~/USER/Kundan.aspx">KUNDAN</asp:HyperLink>
+                        </td>
+                        <td>
+                            |</td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink5" runat="server" 
+                                style="text-decoration:none; color: #FF9900;" 
+                                NavigateUrl="~/USER/Solitiares.aspx">SOLITIARES</asp:HyperLink>
+                        </td>
+                        <td>
+                            |</td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink6" runat="server" 
+                                style="text-decoration:none; color: #FF9900;" 
+                                NavigateUrl="~/USER/Gold coins.aspx">GOLD COINS</asp:HyperLink>
+                        </td>
+                        <td>
+                            l</td>
+                        <td>
+                            <asp:HyperLink ID="HyperLink19" runat="server" ForeColor="#FF9900" style="text-decoration:none"
+                                NavigateUrl="~/USER/Rates.aspx">RATES</asp:HyperLink>
+                        </td>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                    </tr>--%>
+                    <tr>
+                        <td colspan="15">
+                            <marquee behavior="alternate">
+                            <img width="800"height="130" src="../images/s1.png"/>
+                            <img width="800"height="130" src="../images/s2.png"/>
+                            <img width="800"height="130" src="../images/s3.png"/>
+                            <img width="800"height="130" src="../images/s1.png"/>
+                            <img width="800"height="130" src="../images/s2.png"/></marquee></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" colspan="2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        
+         <tr>
+            <td bgcolor="Red"   
+                 
+                 
+                 style="color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: medium; background-color: #000000;" 
+                 colspan="2">
+                
+                        <table align="right" cellpadding="5" cellspacing="10" class="style2">
+                            <tr>
+                                <td style="text-align: left">
+                                    <br />
+                                    Get To Know Us<br />
+                                    <br /><hr width="250" align="left" />
+                                    
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink7" runat="server" 
+                                        NavigateUrl="~/USER/Company Overview.aspx" style="color: #FFFFFF; text-decoration:none">Goldsmith Info</asp:HyperLink>
+                                    <br />
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink8" runat="server"   NavigateUrl="what we do.aspx" style="color: #FFFFFF; text-decoration:none">What We Do</asp:HyperLink>
+                                    <br />
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink9" runat="server"   
+                                        NavigateUrl="~/USER/Manufacturing Process.aspx" 
+                                        style="color: #FFFFFF; text-decoration:none">Manufacturing Process</asp:HyperLink>
+                                    
+                                </td>
+                                <td style="text-align: left">
+                                    
+                                    <br />
+                                        Let Us Help You<br />
+                                    <br />
+                                    
+                                    <hr width="250" align="left" />
+                                    
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink10" runat="server"   
+                                        NavigateUrl="~/USER/Jwellery Care.aspx" 
+                                        style="color: #FFFFFF; text-decoration:none">Jwellery Care</asp:HyperLink>
+                                    <br />
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink11" runat="server"   
+                                        NavigateUrl="~/USER/size guide.aspx" 
+                                        style="color: #FFFFFF; text-decoration:none">Sizing Guide</asp:HyperLink>
+                                    <br />
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink12" runat="server"   
+                                        NavigateUrl="~/USER/know diamond.aspx" 
+                                        style="color: #FFFFFF; text-decoration:none">Know your diamond</asp:HyperLink>
+                                    </td>
+                                <td style="text-align: left">
+                                    
+                                    <br />
+                                        Policies<br />
+                                    <br />
+                                    
+                                    <hr width="250" align="left" />
+                                    
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink13" runat="server"   
+                                        NavigateUrl="~/USER/refund policy.aspx" 
+                                        style="color: #FFFFFF; text-decoration:none">Refund Policy</asp:HyperLink>
+                                    <br />
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink15" runat="server"   
+                                        NavigateUrl="~/USER/shipping policy.aspx" 
+                                        style="color: #FFFFFF; text-decoration:none">Shipping Policy</asp:HyperLink>
+                                    <br />
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink16" runat="server"   
+                                        NavigateUrl="~/USER/cancellation policy.aspx" 
+                                        style="color: #FFFFFF; text-decoration:none">Cancellation Policy</asp:HyperLink>
+                                    </td>
+                               
+                                <td style="text-align: left" valign="top">
+                                    
+                                    <br />
+                                        Customer Services<br />
+                                    <br />
+                                    
+                                    <hr width="250" align="left" />
+                                    
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink17" runat="server"   
+                                        NavigateUrl="~/USER/Contact us.aspx" 
+                                        style="color: #FFFFFF; text-decoration:none">Contact Us</asp:HyperLink>
+                                    <br />
+                                    <br />
+                                    <asp:HyperLink ID="HyperLink18" runat="server"   
+                                        NavigateUrl="~/USER/Feedback.aspx" style="color: #FFFFFF; text-decoration:none">Feedback</asp:HyperLink>
+                                    <br />
+                                    <br />
+                                    </td>
+                               
+                                <td style="text-align: left">
+                                    
+                                    &nbsp;</td>
+                               
+                            </tr>
+                            </table>
+                
+                        </tr>
+
+        
+        
+        <tr>
+            <td bgcolor="#0033CC" 
+                style=" color: #FFFFFF; font-family: Verdana" colspan="2">
+                <marquee behavior="alternate" 
+                    style="color: #FFFFFF; font-size: medium; font-family: Arial, Helvetica, sans-serif; background-color: #003366">Project By:Vishal & Dhaneshwar<asp:Button 
+                    ID="Button1" runat="server" AccessKey="h" BackColor="#003366" Text="a" PostBackUrl="~/ADMIN/Admin Login.aspx" BorderStyle="None" ForeColor="#003366" /></marquee></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="USER_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table align="center" cellpadding="5" cellspacing="0" class="style1">
+        <tr>
+            <td>
+                Escrapzone</td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Menu ID="Menu1" runat="server" ForeColor="White" Height="35px" 
+                    Orientation="Horizontal" RenderingMode="Table" 
+                    style="font-size: large; font-family: Arial, Helvetica, sans-serif; background-color: #333333" 
+                    Width="100%">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem Text="About" Value="About"></asp:MenuItem>
+                        <asp:MenuItem Text="Contact" Value="Contact"></asp:MenuItem>
+                        <asp:MenuItem Text="Feedback" Value="Feedback"></asp:MenuItem>
+                        <asp:MenuItem Text="Login" Value="Login"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
